@@ -1,0 +1,98 @@
+body {
+  background-color: #bde0fe;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.delBTN {
+  height: 40px;
+  width: 90px;
+  margin: 7px;
+  background-color: #ef233c;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.App {
+  padding: 30px;
+}
+
+.title {
+  color: darkcyan;
+  text-shadow: 0 0 30px #ffb703;
+  font-size: 80px;
+}
+.nothing {
+  font-size: 40px;
+  color: #0d1b2a;
+  text-shadow: 0 0 38px black;
+}
+
+.input {
+  margin: auto;
+  width: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textInput {
+  width: 60%;
+  height: 35px;
+  border-radius: 9px;
+  text-indent: 8px;
+  border: none;
+}
+
+#BTN {
+  height: 40px;
+  width: 90px;
+  margin: 7px;
+  background-color: #ffb703;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskCard {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  border-radius: 20px;
+  padding: 11px;
+  margin: 17px;
+  box-shadow: 0 0 9px #ffb703;
+}
+
+img {
+  width: 500px;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+
+  img {
+    max-width: 210px;
+  }
+
+  .input {
+    width: 300px;
+  }
+
+  .taskCard {
+    width: 240px;
+  }
+}
