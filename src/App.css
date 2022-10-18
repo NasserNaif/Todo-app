@@ -1,9 +1,10 @@
 body {
   background-color: #bde0fe;
   text-align: center;
+  
   font-family: "Roboto Condensed", sans-serif;
 }
-.delBTN {
+button {
   height: 40px;
   width: 90px;
   margin: 7px;
@@ -20,8 +21,9 @@ body {
 }
 
 .title {
+  /* width: 50%; */
   color: darkcyan;
-  font-size: 50px;
+  font-size: 1.1rem;
   background-color: #ffb703;
   border: 5px dotted #bde0fe;
 }
@@ -40,7 +42,7 @@ body {
 }
 
 #textInput {
-  width: 60%;
+  width: 80%;
   height: 35px;
   border-radius: 9px;
   text-indent: 8px;
@@ -73,31 +75,46 @@ body {
   border-radius: 20px;
   padding: 11px;
   margin: 17px;
-  box-shadow: -18px 3px #ffb703;
+  box-shadow: -8px 3px #ffb703;
 }
 
 .taskCard:hover {
-  box-shadow: -18px 3px #ef233c;
+  box-shadow: -8px 3px #ef233c;
 }
 
 img {
   width: 500px;
 }
 
-@media all and (max-width: 600px) {
+button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media all and (max-width: 400px) {
   body {
-    text-align: center;
+    display: inline;
+    /* text-align: center; */
   }
 
+  .container{
+  margin-top: 49px;
+  }
+
+  #BTN {
+    width: 180px;
+    font-size: 1.4rem;
+  }
   img {
     max-width: 200px;
   }
 
   .input {
-    width: 210px;
+    width: 380px;
+    flex-direction: column;
   }
 
   .taskCard {
-    width: 200px;
+    width: 250px;
   }
 }
