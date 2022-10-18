@@ -21,8 +21,9 @@ body {
 
 .title {
   color: darkcyan;
-  text-shadow: 0 0 30px #ffb703;
-  font-size: 80px;
+  font-size: 50px;
+  background-color: #ffb703;
+  border: 5px dotted #bde0fe;
 }
 .nothing {
   font-size: 40px;
@@ -72,7 +73,11 @@ body {
   border-radius: 20px;
   padding: 11px;
   margin: 17px;
-  box-shadow: 0 0 9px #ffb703;
+  box-shadow: -18px 3px #ffb703;
+}
+
+.taskCard:hover {
+  box-shadow: -18px 3px #ef233c;
 }
 
 img {
@@ -85,14 +90,14 @@ img {
   }
 
   img {
-    max-width: 210px;
+    max-width: 200px;
   }
 
   .input {
-    width: 300px;
+    width: 210px;
   }
 
   .taskCard {
-    width: 240px;
+    width: 200px;
   }
 }
